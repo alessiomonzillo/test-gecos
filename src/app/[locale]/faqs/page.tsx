@@ -8,9 +8,24 @@ import BoxAiuto from "@/components/BoxAiuto";
 import Partner from "@/components/Partner";
 
 export const metadata: Metadata = {
-  title: "FAQs",
+  title: "Domande frequenti sui servizi del verde",
   description:
-    "Domande frequenti sui servizi di gestione e manutenzione del verde di GE.CO.S. S.r.l.",
+    "Risposte alle domande più comuni su zone di intervento, preventivi, certificazioni e servizi di emergenza di GE.CO.S. S.r.l.",
+  robots: "index,follow",
+  alternates: { canonical: "https://gecospomezia.it/it/faqs" },
+  openGraph: {
+    title: "Domande frequenti | GE.CO.S. S.r.l.",
+    description:
+      "Risposte alle domande più comuni su zone di intervento, preventivi, certificazioni e servizi di emergenza.",
+    images: [
+      {
+        url: "/assets/photos/hero-bg.jpg",
+        width: 1440,
+        height: 717,
+        alt: "FAQ GE.CO.S. S.r.l. – Gestione del verde",
+      },
+    ],
+  },
 };
 
 export default async function FaqsPage() {

@@ -98,13 +98,26 @@
       "n3": "99%",
       "label3": "CLIENTI SODDISFATTI"
     },
+    "sezione2": {
+      "title": "Un team qualificato al vostro fianco",
+      "bodyText": "Operiamo con professionalità e passione su tutto il territorio nazionale. Il nostro team è composto da operatori altamente qualificati, dotati delle migliori attrezzature e costantemente aggiornati sulle normative di settore."
+    },
+    "card1Number": "01",
+    "card1Title": "ESPERIENZA PLURIENNALE",
+    "card1Text": "Oltre due decenni di attività nel settore del verde pubblico e privato ci hanno permesso di sviluppare competenze uniche e consolidate.",
+    "card2Number": "02",
+    "card2Title": "TECNOLOGIE AVANZATE",
+    "card2Text": "Utilizziamo macchinari e tecniche all'avanguardia per garantire risultati ottimali nel rispetto dell'ambiente.",
+    "card3Number": "03",
+    "card3Title": "CERTIFICAZIONI RICONOSCIUTE",
+    "card3Text": "Le nostre certificazioni attestano la qualità dei nostri processi e il nostro impegno verso la sostenibilità ambientale.",
     "dropdownTitle": "I nostri valori",
-    "dropdown1Title": "Qualità del servizio",
-    "dropdown1Text": "Ci impegniamo a fornire servizi di altissima qualità, certificati da organismi internazionali riconosciuti.",
-    "dropdown2Title": "Sostenibilità ambientale",
-    "dropdown2Text": "Adottiamo pratiche eco-sostenibili in ogni fase del nostro lavoro, dalla scelta delle attrezzature alla gestione dei rifiuti verdi. Il nostro impegno per l'ambiente è testimoniato dalla certificazione EMAS.",
-    "dropdown3Title": "Sicurezza sul lavoro",
-    "dropdown3Text": "La sicurezza dei nostri operatori è la nostra priorità assoluta. Tutti i nostri interventi rispettano le normative sulla sicurezza sul lavoro."
+    "dropdown1Title": "2003–2010: Le origini",
+    "dropdown1Text": "GE.CO.S. S.r.l. nasce a Pomezia con un piccolo gruppo di professionisti del verde. Nei primi anni consolidiamo la presenza nel territorio locale, costruendo rapporti duraturi con i primi comuni clienti.",
+    "dropdown2Title": "2010–2020: La crescita",
+    "dropdown2Text": "Il decennio di espansione: ampliamo il parco macchine, otteniamo le prime certificazioni di qualità e allargando il raggio operativo al Lazio e alle regioni limitrofe. Raggiungiamo i 100 dipendenti e superiamo le 100 commesse attive.",
+    "dropdown3Title": "2020–2026: L'eccellenza certificata",
+    "dropdown3Text": "Otteniamo la registrazione EMAS e la certificazione UNI/PDR 125:2022 per la parità di genere. Consolidiamo le partnership con grandi enti nazionali come ANAS e ACEA, diventando un riferimento riconosciuto nel settore."
   },
   "servizi": {
     "hero": {
@@ -263,6 +276,7 @@
     "scaricaModulo": "Scarica modulo",
     "copyright": "© 2026 GE.CO.S. S.r.l. Tutti i diritti riservati - C.F., P.IVA, C.C.I.A.A.: 07554601000 - Iscrizione REA: RM-1040431",
     "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
     "whistleblowingLink": "Whistleblowing"
   }
 }

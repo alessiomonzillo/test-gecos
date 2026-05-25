@@ -1,0 +1,169 @@
+{
+  "services": [
+    {
+      "id": "manutenzione-aree-verdi",
+      "slug": "manutenzione-aree-verdi",
+      "order": 1,
+      "title": "Manutenzione aree verdi",
+      "subtitle": "Cura e gestione di parchi, giardini e aree a verde urbano e periurbano.",
+      "label": "MANUTENZIONE",
+      "detail1Title": "Taglio erba e sfalcio",
+      "detail1Text": "Interventi periodici di sfalcio su superfici di qualsiasi dimensione, con macchinari professionali.",
+      "detail2Title": "Potatura alberi e siepi",
+      "detail2Text": "Potatura eseguita da arboricoltura certificata, nel rispetto della fisiologia delle piante e delle normative locali.",
+      "image": "/assets/photos/servizio-1.jpg",
+      "imageAlt": "Manutenzione aree verdi",
+      "heroImage": "/assets/photos/servizio-hero-1.jpg",
+      "heroImageAlt": "Manutenzione aree verdi – dettaglio intervento"
+    },
+    {
+      "id": "gestione-aree-boschive",
+      "slug": "gestione-aree-boschive",
+      "order": 2,
+      "title": "Gestione aree boschive",
+      "subtitle": "Interventi specializzati per la cura e la sicurezza di aree forestali e naturali.",
+      "label": "GESTIONE BOSCHIVA",
+      "detail1Title": "Pulizia e decespugliamento",
+      "detail1Text": "Operazioni di bonifica e pulizia di aree incolte, sentieri e zone di interfaccia urbano-forestale.",
+      "detail2Title": "Prevenzione incendi",
+      "detail2Text": "Creazione di fasce tagliafuoco e riduzione del combustibile vegetale per la protezione delle aree boschive.",
+      "image": "/assets/photos/servizio-2.jpg",
+      "imageAlt": "Gestione aree boschive",
+      "heroImage": "/assets/photos/servizio-hero-2.jpg",
+      "heroImageAlt": "Gestione aree boschive – intervento forestale"
+    },
+    {
+      "id": "arredo-urbano",
+      "slug": "arredo-urbano",
+      "order": 3,
+      "title": "Arredo urbano e fioriture",
+      "subtitle": "Progettazione e cura di aiuole, fioriture stagionali e spazi pubblici ornamentali.",
+      "label": "ARREDO URBANO",
+      "detail1Title": "Allestimento aiuole",
+      "detail1Text": "Progettazione e realizzazione di aiuole fiorite per centri urbani, rotatorie e spazi pubblici.",
+      "detail2Title": "Fioriture stagionali",
+      "detail2Text": "Selezione e messa a dimora di piante stagionali per mantenere gli spazi pubblici sempre curati e colorati.",
+      "image": "/assets/photos/servizio-3.jpg",
+      "imageAlt": "Arredo urbano e fioriture",
+      "heroImage": "/assets/photos/servizio-hero-3.jpg",
+      "heroImageAlt": "Arredo urbano – allestimento aiuole fiorite"
+    },
+    {
+      "id": "servizi-cimiteriali",
+      "slug": "servizi-cimiteriali",
+      "order": 4,
+      "title": "Servizi cimiteriali",
+      "subtitle": "Gestione e manutenzione di aree cimiteriali con cura e rispetto.",
+      "label": "CIMITERIALE",
+      "detail1Title": "Manutenzione ordinaria",
+      "detail1Text": "Pulizia, taglio erba e cura delle aree verdi all'interno dei cimiteri comunali.",
+      "detail2Title": "Gestione dei rifiuti",
+      "detail2Text": "Raccolta e smaltimento dei rifiuti vegetali nel rispetto delle normative ambientali vigenti.",
+      "image": "/assets/photos/servizio-4.jpg",
+      "imageAlt": "Servizi cimiteriali",
+      "heroImage": "/assets/photos/servizio-hero-4.jpg",
+      "heroImageAlt": "Servizi cimiteriali – cura aree verdi"
+    }
+  ],
+  "pages": {
+    "home": {
+      "seo": {
+        "metaTitle": "GE.CO.S. S.r.l. – Gestione Costruzioni Servizi",
+        "metaDescription": "GE.CO.S. S.r.l. – Gestione e manutenzione del verde urbano e rurale a Pomezia (RM). Certificata ISO 9001, EMAS e UNI/PDR 125:2022.",
+        "ogTitle": "GE.CO.S. S.r.l. – Gestione Costruzioni Servizi",
+        "ogDescription": "Gestione e manutenzione del verde urbano e rurale. Qualità certificata e oltre 20 anni di esperienza.",
+        "ogImage": "/assets/photos/hero-bg.jpg",
+        "robots": "index,follow",
+        "canonicalUrl": ""
+      }
+    },
+    "chi-siamo": {
+      "seo": {
+        "metaTitle": "Chi siamo | GE.CO.S. S.r.l.",
+        "metaDescription": "Scopri la storia, i valori e il team di GE.CO.S. S.r.l., azienda specializzata nella gestione del verde con oltre 20 anni di esperienza.",
+        "ogTitle": "Chi siamo – GE.CO.S. S.r.l.",
+        "ogDescription": "Oltre 20 anni di esperienza nel verde urbano e rurale. Un team qualificato al vostro fianco.",
+        "ogImage": "",
+        "robots": "index,follow",
+        "canonicalUrl": ""
+      }
+    },
+    "servizi": {
+      "seo": {
+        "metaTitle": "Servizi | GE.CO.S. S.r.l.",
+        "metaDescription": "Scopri i servizi di manutenzione del verde, gestione boschiva, arredo urbano e servizi cimiteriali di GE.CO.S. S.r.l.",
+        "ogTitle": "I nostri servizi – GE.CO.S. S.r.l.",
+        "ogDescription": "Una gamma completa di servizi per la cura e la gestione del verde, adattati alle specifiche esigenze di ogni cliente.",
+        "ogImage": "",
+        "robots": "index,follow",
+        "canonicalUrl": ""
+      }
+    },
+    "certificazioni": {
+      "seo": {
+        "metaTitle": "Certificazioni | GE.CO.S. S.r.l.",
+        "metaDescription": "Le certificazioni ISO 9001, EMAS e UNI/PDR 125:2022 di GE.CO.S. S.r.l. attestano la qualità e la sostenibilità dei nostri servizi.",
+        "ogTitle": "Qualità certificata – GE.CO.S. S.r.l.",
+        "ogDescription": "Certificazioni internazionali che garantiscono processi di lavoro all'insegna della qualità e della sostenibilità.",
+        "ogImage": "",
+        "robots": "index,follow",
+        "canonicalUrl": ""
+      }
+    },
+    "faqs": {
+      "seo": {
+        "metaTitle": "FAQ | GE.CO.S. S.r.l.",
+        "metaDescription": "Domande frequenti sui servizi di manutenzione del verde di GE.CO.S. S.r.l.",
+        "ogTitle": "Domande frequenti – GE.CO.S. S.r.l.",
+        "ogDescription": "Trova le risposte alle domande più comuni sui nostri servizi e sulla nostra azienda.",
+        "ogImage": "",
+        "robots": "index,follow",
+        "canonicalUrl": ""
+      }
+    },
+    "contatti": {
+      "seo": {
+        "metaTitle": "Contatti | GE.CO.S. S.r.l.",
+        "metaDescription": "Contatta GE.CO.S. S.r.l. per informazioni sui nostri servizi di manutenzione del verde. Sede a Pomezia (RM).",
+        "ogTitle": "Contattaci – GE.CO.S. S.r.l.",
+        "ogDescription": "Siamo a tua disposizione per qualsiasi informazione sui nostri servizi.",
+        "ogImage": "",
+        "robots": "index,follow",
+        "canonicalUrl": ""
+      }
+    },
+    "privacy-policy": {
+      "seo": {
+        "metaTitle": "Privacy Policy | GE.CO.S. S.r.l.",
+        "metaDescription": "Informativa sulla privacy di GE.CO.S. S.r.l. ai sensi del GDPR.",
+        "ogTitle": "",
+        "ogDescription": "",
+        "ogImage": "",
+        "robots": "noindex,nofollow",
+        "canonicalUrl": ""
+      }
+    },
+    "cookie-policy": {
+      "seo": {
+        "metaTitle": "Cookie Policy | GE.CO.S. S.r.l.",
+        "metaDescription": "Informativa sull'uso dei cookie su gecossrl.it.",
+        "ogTitle": "",
+        "ogDescription": "",
+        "ogImage": "",
+        "robots": "noindex,nofollow",
+        "canonicalUrl": ""
+      }
+    },
+    "conferma": {
+      "seo": {
+        "metaTitle": "Richiesta inviata | GE.CO.S. S.r.l.",
+        "metaDescription": "",
+        "ogTitle": "",
+        "ogDescription": "",
+        "ogImage": "",
+        "robots": "noindex,nofollow",
+        "canonicalUrl": ""
+      }
+    }
+  }
+}

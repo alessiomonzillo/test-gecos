@@ -8,9 +8,24 @@ import Partner from "@/components/Partner";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contatti",
+  title: "Contattaci",
   description:
-    "Contatta GE.CO.S. S.r.l. per informazioni sui nostri servizi o per richiedere un preventivo. Siamo a Pomezia (RM).",
+    "Contatta GE.CO.S. S.r.l. per informazioni sui nostri servizi o per richiedere un preventivo. Siamo a Pomezia (RM), tel. 069107142.",
+  robots: "index,follow",
+  alternates: { canonical: "https://gecospomezia.it/it/contatti" },
+  openGraph: {
+    title: "Contattaci | GE.CO.S. S.r.l.",
+    description:
+      "Richiedi un preventivo o informazioni. GE.CO.S. S.r.l. – Verde urbano e rurale a Pomezia (RM), tel. 069107142.",
+    images: [
+      {
+        url: "/assets/photos/hero-bg.jpg",
+        width: 1440,
+        height: 717,
+        alt: "Contatti GE.CO.S. S.r.l. – Pomezia",
+      },
+    ],
+  },
 };
 
 const EMAILS = [

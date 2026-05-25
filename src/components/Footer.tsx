@@ -189,6 +189,13 @@ export default function Footer() {
             </Link>
             <span className="text-gray-200">|</span>
             <Link
+              href="/it/cookie-policy"
+              className="text-primary underline hover:no-underline"
+            >
+              {t("cookiePolicy")}
+            </Link>
+            <span className="text-gray-200">|</span>
+            <Link
               href="#"
               className="text-primary underline hover:no-underline"
             >

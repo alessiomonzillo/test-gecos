@@ -9,9 +9,24 @@ import FaqAccordion from "@/components/FaqAccordion";
 import Partner from "@/components/Partner";
 
 export const metadata: Metadata = {
-  title: "Servizi",
+  title: "Servizi professionali per il verde",
   description:
-    "Scopri i servizi di manutenzione del verde, gestione boschiva, arredo urbano e servizi cimiteriali di GE.CO.S. S.r.l.",
+    "Scopri i servizi di manutenzione del verde, gestione boschiva, arredo urbano e servizi cimiteriali di GE.CO.S. S.r.l. a Pomezia (RM).",
+  robots: "index,follow",
+  alternates: { canonical: "https://gecospomezia.it/it/servizi" },
+  openGraph: {
+    title: "Servizi professionali per il verde | GE.CO.S. S.r.l.",
+    description:
+      "Manutenzione aree verdi, gestione boschiva, arredo urbano e servizi cimiteriali. Qualità certificata ISO 9001.",
+    images: [
+      {
+        url: "/assets/photos/hero-bg.jpg",
+        width: 1440,
+        height: 717,
+        alt: "Servizi professionali per il verde – GE.CO.S. S.r.l.",
+      },
+    ],
+  },
 };
 
 export default async function ServiziPage() {

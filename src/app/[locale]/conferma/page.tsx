@@ -6,7 +6,8 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Richiesta inviata",
-  robots: { index: false },
+  description: "La tua richiesta è stata inviata con successo. Ti ricontatteremo al più presto.",
+  robots: "noindex,nofollow",
 };
 
 export default async function ConfermaPage() {

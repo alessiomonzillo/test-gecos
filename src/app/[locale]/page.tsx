@@ -16,10 +16,20 @@ export const metadata: Metadata = {
   title: "GE.CO.S. S.r.l. – Gestione Costruzioni Servizi",
   description:
     "Gestione e manutenzione del verde urbano e rurale a Pomezia (RM). Qualità certificata ISO 9001, EMAS, UNI/PDR 125:2022.",
+  robots: "index,follow",
+  alternates: { canonical: "https://gecospomezia.it/it" },
   openGraph: {
     title: "GE.CO.S. S.r.l. – Gestione Costruzioni Servizi",
     description:
-      "Gestione e manutenzione del verde urbano e rurale. Qualità certificata e oltre 20 anni di esperienza.",
+      "Gestione e manutenzione del verde urbano e rurale a Pomezia (RM). Qualità certificata ISO 9001, EMAS, UNI/PDR 125:2022.",
+    images: [
+      {
+        url: "/assets/photos/hero-bg.jpg",
+        width: 1440,
+        height: 717,
+        alt: "GE.CO.S. S.r.l. – Verde urbano e rurale a Pomezia",
+      },
+    ],
   },
 };
 

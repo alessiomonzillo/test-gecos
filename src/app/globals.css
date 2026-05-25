@@ -117,7 +117,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-     color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
     background: transparent;
     font-weight: 700;
     font-size: 0.875rem;
@@ -125,12 +126,6 @@
     text-transform: uppercase;
     padding: 0.875rem 2rem;
     transition: background 0.2s, color 0.2s;
-      border: 4px solid transparent;
-      border-image-source: url("Vector.svg");
-      border-image-slice: 12 fill;
-      border-image-width: 12px;
-      border-image-repeat: stretch;
-
   }
 
   .btn-outline:hover {
@@ -160,6 +155,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid var(--color-primary);
     color: var(--color-primary);
     background: var(--color-accent-light);
     font-weight: 700;
@@ -168,12 +164,6 @@
     text-transform: uppercase;
     padding: 0.875rem 2rem;
     transition: background 0.2s;
-
-      border: 4px solid transparent;
-      border-image-source: url("Vector.svg");
-      border-image-slice: 12 fill;
-      border-image-width: 12px;
-      border-image-repeat: stretch;
   }
 
   .btn-outline-white:hover {
