@@ -13,6 +13,7 @@ const PAGE_LABELS: Array<{ key: string; label: string; description: string }> = 
   { key: "faqs", label: "FAQ", description: "Pagina FAQ e domande" },
   { key: "contatti", label: "Contatti", description: "Pagina contatti" },
   { key: "conferma", label: "Conferma invio form", description: "Pagina di ringraziamento dopo invio form" },
+  { key: "whistleblowing", label: "Whistleblowing", description: "Pagina whistleblowing D.Lgs. 24/2023" },
   { key: "nav", label: "Menu navigazione", description: "Voci della top-bar" },
   { key: "footer", label: "Footer", description: "Testi del footer" },
 ];

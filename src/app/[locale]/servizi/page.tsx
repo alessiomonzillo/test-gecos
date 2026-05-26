@@ -2,12 +2,21 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroCarousel from "@/components/HeroCarousel";
+import Occhiello from "@/components/Occhiello";
 import SectionTitle from "@/components/SectionTitle";
 import CardServizi from "@/components/CardServizi";
 import BoxAiuto from "@/components/BoxAiuto";
 import FaqAccordion from "@/components/FaqAccordion";
 import Partner from "@/components/Partner";
 import { getServices } from "@/lib/site-content";
+
+const HERO_SLIDES = [
+  { src: "/assets/photos/servizio-1.jpg", alt: "Manutenzione aree verdi" },
+  { src: "/assets/photos/servizio-2.jpg", alt: "Gestione aree boschive" },
+  { src: "/assets/photos/servizio-3.jpg", alt: "Arredo urbano e fioriture" },
+  { src: "/assets/photos/servizio-4.jpg", alt: "Servizi cimiteriali" },
+];
 
 export const metadata: Metadata = {
   title: "Servizi professionali per il verde",
@@ -64,13 +73,25 @@ export default async function ServiziPage() {
     <>
       <Header />
       <main>
+        {/* ── Hero ── */}
+        <HeroCarousel slides={HERO_SLIDES}>
+          <Occhiello label={t("hero.occhiello")} className="mb-5" />
+          <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold text-white leading-[1.05] tracking-tight">
+            {t("hero.title")}{" "}
+            <span className="text-accent">{t("hero.titleAccent")}</span>
+          </h1>
+          <p className="mt-4 text-base md:text-lg text-white/90 max-w-3xl leading-relaxed">
+            {t("hero.subtitle")}
+          </p>
+        </HeroCarousel>
+
         {/* ── Lista servizi ── */}
         <section className="pt-16 pb-20 bg-white">
           <div className="container-boxed">
             <div className="mb-10">
-              <h1 className="text-3xl md:text-[40px] font-bold text-primary leading-tight">
+              <h2 className="text-3xl md:text-[40px] font-bold text-primary leading-tight">
                 {t("title")}
-              </h1>
+              </h2>
               <p className="mt-3 text-base text-primary-950 max-w-3xl">
                 {t("subtitle")}
               </p>

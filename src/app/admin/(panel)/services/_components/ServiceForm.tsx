@@ -16,6 +16,8 @@ export interface ServiceFormData {
   detail1Text: string;
   detail2Title: string;
   detail2Text: string;
+  detail3Title: string;
+  detail3Text: string;
   image: string;
   imageAlt: string;
   heroImage: string;
@@ -38,6 +40,8 @@ const EMPTY: ServiceFormData = {
   detail1Text: "",
   detail2Title: "",
   detail2Text: "",
+  detail3Title: "",
+  detail3Text: "",
   image: "",
   imageAlt: "",
   heroImage: "",
@@ -265,6 +269,28 @@ export default function ServiceForm({ initialData, mode }: Props) {
             <textarea
               value={form.detail2Text}
               onChange={(e) => handleChange("detail2Text", e.target.value)}
+              rows={3}
+              className="w-full border border-gray-300 px-3 py-2 text-sm text-primary focus:outline-none focus:border-primary resize-y"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-bold text-primary uppercase tracking-wide mb-1">
+              Titolo dettaglio 3
+            </label>
+            <input
+              type="text"
+              value={form.detail3Title}
+              onChange={(e) => handleChange("detail3Title", e.target.value)}
+              className="w-full border border-gray-300 px-3 py-2 text-sm text-primary focus:outline-none focus:border-primary"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-bold text-primary uppercase tracking-wide mb-1">
+              Testo dettaglio 3
+            </label>
+            <textarea
+              value={form.detail3Text}
+              onChange={(e) => handleChange("detail3Text", e.target.value)}
               rows={3}
               className="w-full border border-gray-300 px-3 py-2 text-sm text-primary focus:outline-none focus:border-primary resize-y"
             />

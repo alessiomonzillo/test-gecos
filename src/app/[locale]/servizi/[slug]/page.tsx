@@ -103,19 +103,40 @@ export default async function ServizioPage({
               <h2 className="text-xl md:text-2xl font-bold text-primary">
                 {service.subtitle}
               </h2>
-              <p className="text-[15px] font-bold text-primary leading-relaxed mt-6">
-                {service.detail1Title}
-              </p>
-              <p className="text-[14px] text-primary-950 leading-relaxed mt-2">
-                {service.detail1Text}
-              </p>
-              <p className="text-[15px] font-bold text-primary leading-relaxed mt-6">
-                {service.detail2Title}
-              </p>
-              <p className="text-[14px] text-primary-950 leading-relaxed mt-2">
-                {service.detail2Text}
-              </p>
             </div>
+
+            {/* 3 card dettagli */}
+            {(() => {
+              const cards = [
+                { title: service.detail1Title, text: service.detail1Text, icon: "eco" },
+                { title: service.detail2Title, text: service.detail2Text, icon: "handyman" },
+                ...(service.detail3Title && service.detail3Text
+                  ? [{ title: service.detail3Title, text: service.detail3Text, icon: "recycling" }]
+                  : []),
+              ].filter((c) => c.title && c.text);
+              return cards.length > 0 ? (
+                <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-[10px]">
+                  {cards.map((card) => (
+                    <div
+                      key={card.title}
+                      className="bg-gray-50 shadow-sm p-5 flex flex-col gap-5"
+                    >
+                      <div className="flex items-end gap-4">
+                        <span className="material-symbols-outlined text-primary text-[42px] leading-none">
+                          {card.icon}
+                        </span>
+                        <p className="font-extrabold text-primary-950 text-xl uppercase leading-tight">
+                          {card.title}
+                        </p>
+                      </div>
+                      <p className="text-[15px] text-primary-950 font-light leading-relaxed">
+                        {card.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              ) : null;
+            })()}
 
             {/* Hero photo */}
             <div className="mt-12 relative w-full aspect-[16/9] overflow-hidden bg-gray-100">

@@ -313,5 +313,27 @@
     "privacyPolicy": "Privacy Policy",
     "cookiePolicy": "Cookie Policy",
     "whistleblowingLink": "Whistleblowing"
+  },
+  "whistleblowing": {
+    "title": "Whistleblowing",
+    "lead": "La presente sezione è dedicata alla segnalazione di comportamenti, atti od omissioni che possano costituire violazioni ai sensi del D.Lgs. 24/2023 in materia di whistleblowing",
+    "body": "Le segnalazioni possono riguardare fatti, comportamenti o situazioni di cui il segnalante sia venuto a conoscenza nell'ambito del proprio contesto lavorativo e che possano arrecare danno o pregiudizio all'interesse pubblico, all'integrità dell'organizzazione o alla corretta gestione delle attività aziendali.",
+    "section1Title": "Segnalazioni anonime",
+    "section1Text": "Le segnalazioni anonime, ossia prive di elementi che consentano di identificare il segnalante, saranno trattate al di fuori della disciplina prevista dal D.Lgs. 24/2023. Tuttavia, qualora adeguatamente circostanziate e supportate da elementi utili, potranno comunque essere prese in considerazione.",
+    "section2Title": "Informazioni richieste per la segnalazione",
+    "section2Intro": "Al fine di consentire una corretta gestione della segnalazione, è necessario fornire informazioni complete e dettagliate, tra cui:",
+    "section2Item1": "dati identificativi del segnalante;",
+    "section2Item2": "eventuale rapporto con l'impresa, l'ente o il soggetto giuridico interessato;",
+    "section2Item3": "ruolo ricoperto all'interno dell'organizzazione;",
+    "section2Item4": "dati identificativi del soggetto o della struttura oggetto della segnalazione;",
+    "section2Item5": "periodo temporale in cui si è verificata la presunta violazione;",
+    "section2Item6": "luogo o struttura di riferimento;",
+    "section2Item7": "descrizione chiara e sintetica dei fatti oggetto della segnalazione.",
+    "section3Title": "Responsabilità del segnalante",
+    "section3Text": "Il segnalante dichiara di essere consapevole delle responsabilità e delle conseguenze civili e penali previste in caso di dichiarazioni false o mendaci, nonché in caso di formazione o utilizzo di atti falsi, ai sensi dell'art. 76 del D.P.R. 445/2000.",
+    "section4Title": "Tutela della riservatezza",
+    "section4Text": "L'identità del segnalante e le informazioni contenute nella segnalazione saranno trattate nel rispetto dei principi di riservatezza, protezione dei dati personali e delle disposizioni previste dalla normativa vigente.",
+    "ctaHome": "TORNA ALLA HOME",
+    "ctaDownload": "SCARICA MODULO"
   }
 }

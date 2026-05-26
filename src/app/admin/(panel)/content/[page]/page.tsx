@@ -15,6 +15,7 @@ const PAGE_LABELS: Record<string, string> = {
   faqs: "FAQ",
   contatti: "Contatti",
   conferma: "Conferma invio form",
+  whistleblowing: "Whistleblowing",
   nav: "Menu navigazione",
   footer: "Footer",
 };

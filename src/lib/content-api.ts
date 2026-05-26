@@ -24,6 +24,8 @@ export interface ServiceItem {
   detail1Text: string;
   detail2Title: string;
   detail2Text: string;
+  detail3Title?: string;
+  detail3Text?: string;
   image: string;
   imageAlt: string;
   heroImage: string;
