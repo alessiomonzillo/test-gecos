@@ -6,16 +6,19 @@ const RUN_ENV_MAP = {
         instances: 2,
         max_memory_restart: "250M",
         port: "9999",
+        backendPort: "9998",
     },
     dev: {
         instances: 2,
         max_memory_restart: "250M",
         port: "9999",
+        backendPort: "9998",
     },
     prod: {
         instances: 4,
         max_memory_restart: "1000M",
         port: "9999",
+        backendPort: "9998",
     },
 };
 
@@ -33,17 +36,17 @@ module.exports = {
             script: "server.js",
             env_local: {
                 NODE_ENV: "development",
-                BACKEND_PORT: 3001,
+                BACKEND_PORT: RUN_ENV_MAP.local.backendPort,
                 APP_ENV: "local",
             },
             env_dev: {
                 NODE_ENV: "production",
-                BACKEND_PORT: 3001,
+                BACKEND_PORT: RUN_ENV_MAP.dev.backendPort,
                 APP_ENV: "dev",
             },
             env_prod: {
                 NODE_ENV: "production",
-                BACKEND_PORT: 3001,
+                BACKEND_PORT: RUN_ENV_MAP.prod.backendPort,
                 APP_ENV: "prod",
             },
         },
@@ -59,19 +62,19 @@ module.exports = {
                 NODE_PORT: "9999",
                 PORT: "9999",
                 APP_ENV: "local",
-                CONTENT_API_URL: "http://localhost:3001",
+                CONTENT_API_URL: `http://localhost:${env.backendPort}`,
             },
             env_dev: {
                 NODE_PORT: "9999",
                 PORT: "9999",
                 APP_ENV: "dev",
-                CONTENT_API_URL: "http://localhost:3001",
+                CONTENT_API_URL: `http://localhost:${env.backendPort}`,
             },
             env_prod: {
                 NODE_PORT: "9999",
                 PORT: "9999",
                 APP_ENV: "prod",
-                CONTENT_API_URL: "http://localhost:3001",
+                CONTENT_API_URL: `http://localhost:${env.backendPort}`,
             },
         },
     ],
