@@ -157,7 +157,7 @@ export default async function ChiSiamoPage() {
               <p className="text-base text-primary-950 max-w-3xl mb-8">
                 {t("dropdownSubtitle")}
               </p>
-              <FaqAccordion items={dropdownItems} />
+              <FaqAccordion items={dropdownItems} variant="valori" />
             </div>
           </div>
         </section>

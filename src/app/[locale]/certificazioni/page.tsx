@@ -42,7 +42,7 @@ function CertCard({
   ctaPdf,
 }: CertCardProps) {
   return (
-    <div className="flex flex-col border border-gray-200">
+    <div className="flex flex-col border border-[#d1d1d1]">
       {/* Immagine certificato */}
       <div className="relative overflow-hidden aspect-[364/400] bg-gray-100">
         <Image
@@ -176,7 +176,7 @@ export default async function CertificazioniPage() {
         {/* ── Certificazioni ── */}
         <section className="pb-20 bg-white">
           <div className="container-boxed">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px]">
               {certs.map(({ n, label, title, text, body, pdfUrl, previewUrl }) => (
                 <CertCard
                   key={n}
@@ -205,7 +205,7 @@ export default async function CertificazioniPage() {
             <p className="text-base text-primary-950 max-w-3xl mb-10">
               {t("attestati.subtitle")}
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px]">
               {attestati.map(({ n, label, title, text, body }) => (
                 <CertCard
                   key={n}

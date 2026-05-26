@@ -49,7 +49,7 @@ export default function ContactForm() {
   const options = (t.raw("bisognoOptions") as string[]) ?? [];
 
   const inputClass =
-    "w-full border border-gray-200 bg-white px-4 py-[14px] text-[15px] text-primary placeholder:text-gray-400 outline-none focus:border-primary transition-colors";
+    "w-full border border-[#b0b0b0]/80 bg-white px-4 py-[14px] text-[15px] text-primary-950 placeholder:text-[#6d6d6d] outline-none focus:border-primary shadow-[0px_1px_1.5px_rgba(0,0,0,0.15)] transition-colors";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
@@ -126,7 +126,7 @@ export default function ContactForm() {
           onChange={(e) =>
             setFormData((p) => ({ ...p, privacy: e.target.checked }))
           }
-          className="mt-0.5 h-4 w-4 flex-shrink-0 accent-primary border border-gray-300"
+          className="mt-0.5 h-4 w-4 flex-shrink-0 accent-primary border border-[#b0b0b0]"
         />
         <span className="text-[12px] md:text-[13px] text-primary-950 leading-relaxed">
           {t("privacy")}
