@@ -8,6 +8,15 @@ import BoxDati from "@/components/BoxDati";
 import BoxAiuto from "@/components/BoxAiuto";
 import Partner from "@/components/Partner";
 import FaqAccordion from "@/components/FaqAccordion";
+import HeroCarousel from "@/components/HeroCarousel";
+
+const HERO_SLIDES = [
+  { src: "/assets/photos/chi-siamo.jpg", alt: "Chi siamo GE.CO.S." },
+  { src: "/assets/photos/chi-siamo.jpg", alt: "Chi siamo GE.CO.S." },
+  { src: "/assets/photos/chi-siamo.jpg", alt: "Chi siamo GE.CO.S." },
+  { src: "/assets/photos/chi-siamo.jpg", alt: "Chi siamo GE.CO.S." },
+  { src: "/assets/photos/chi-siamo.jpg", alt: "Chi siamo GE.CO.S." },
+];
 
 export const metadata: Metadata = {
   title: "Chi siamo",
@@ -62,38 +71,16 @@ export default async function ChiSiamoPage() {
       <Header />
       <main>
         {/* ── Hero ── */}
-        <section className="relative h-[469px] overflow-hidden">
-          <Image
-            src="/assets/photos/chi-siamo.jpg"
-            alt="Chi siamo GE.CO.S."
-            fill
-            priority
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-primary/55" />
-          <div className="absolute inset-0 flex items-center">
-            <div className="container-boxed w-full">
-              <Occhiello label={t("hero.occhiello")} className="mb-5" />
-              <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold text-white leading-[1.05] tracking-tight">
-                {t("hero.title")}{" "}
-                <span className="text-accent">{t("hero.titleAccent")}</span>
-              </h1>
-              <p className="mt-4 text-base md:text-lg text-white/90 max-w-3xl leading-relaxed">
-                {t("hero.subtitle")}
-              </p>
-              <div className="mt-5 flex items-center gap-2">
-                <span className="block h-[3px] w-7 bg-accent" />
-                {Array.from({ length: 4 }).map((_, i) => (
-                  <span
-                    key={i}
-                    className="block h-[3px] w-7 bg-accent/40"
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+        <HeroCarousel slides={HERO_SLIDES}>
+          <Occhiello label={t("hero.occhiello")} className="mb-5" />
+          <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold text-white leading-[1.05] tracking-tight">
+            {t("hero.title")}{" "}
+            <span className="text-accent">{t("hero.titleAccent")}</span>
+          </h1>
+          <p className="mt-4 text-base md:text-lg text-white/90 max-w-3xl leading-relaxed">
+            {t("hero.subtitle")}
+          </p>
+        </HeroCarousel>
 
         {/* ── Contenuto principale ── */}
         <section className="py-16 bg-white">
