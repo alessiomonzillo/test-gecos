@@ -1,4 +1,3 @@
-import type { ServiceItem, SeoData } from "./site-content";
 import itMessages from "../../messages/it.json";
 
 const BASE = process.env.CONTENT_API_URL;
@@ -13,7 +12,32 @@ export interface CompanyData {
   copyright: string;
 }
 
-export type { ServiceItem, SeoData };
+export interface ServiceItem {
+  id: string;
+  slug: string;
+  order: number;
+  title: string;
+  subtitle: string;
+  label: string;
+  detail1Title: string;
+  detail1Text: string;
+  detail2Title: string;
+  detail2Text: string;
+  image: string;
+  imageAlt: string;
+  heroImage: string;
+  heroImageAlt: string;
+}
+
+export interface SeoData {
+  metaTitle?: string;
+  metaDescription?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  robots?: string;
+  canonicalUrl?: string;
+}
 
 async function fetchOrNull<T>(path: string): Promise<T | null> {
   if (!BASE) return null;

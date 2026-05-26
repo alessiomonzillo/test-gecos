@@ -1,10 +1,10 @@
 import content from "@/data/site-content.json";
+import type { ServiceItem, SeoData } from "./content-api";
 import { getServicesFromApi, getSeoFromApi } from "./content-api";
 
+export type { ServiceItem, SeoData };
 export type SiteContent = typeof content;
-export type ServiceItem = SiteContent["services"][number];
 export type PageKey = keyof SiteContent["pages"];
-export type SeoData = SiteContent["pages"][PageKey]["seo"];
 
 export function getSiteContent(): SiteContent {
   return content;
