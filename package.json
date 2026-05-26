@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "next build && cd backend && npm ci --omit=dev && cd .. && pm2 startOrRestart ecosystem.config.cjs --env prod"
   },
   "dependencies": {
     "framer-motion": "^12.40.0",
