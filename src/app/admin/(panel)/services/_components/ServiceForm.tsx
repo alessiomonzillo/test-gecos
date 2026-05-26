@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import ImageUploadField from "@/app/admin/_components/ImageUploadField";
 
 export interface ServiceFormData {
+  dbId?: number;
   id: string;
   slug: string;
   order: number;
@@ -110,6 +111,19 @@ export default function ServiceForm({ initialData, mode }: Props) {
           Identità
         </legend>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {form.dbId !== undefined && (
+            <div>
+              <label className="block text-xs font-bold text-gray-400 uppercase tracking-wide mb-1">
+                DB ID <span className="normal-case font-normal">(autoincrement)</span>
+              </label>
+              <input
+                type="text"
+                value={form.dbId}
+                disabled
+                className="w-full border border-gray-200 px-3 py-2 text-sm text-gray-400 bg-gray-50 font-mono"
+              />
+            </div>
+          )}
           <div>
             <label className="block text-xs font-bold text-primary uppercase tracking-wide mb-1">
               ID <span className="text-error">*</span>

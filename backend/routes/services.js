@@ -13,11 +13,14 @@ function rowToService(row) {
   } catch (_e) {
     data = {};
   }
+  // Exclude stored string "id" so the numeric PK is never overridden
+  const { id: _ignoredStringId, ...rest } = data;
   return {
-    id: row.id,
+    dbId: row.id,
+    id: row.slug,
     slug: row.slug,
     order: row.sort_order,
-    ...data,
+    ...rest,
   };
 }
 
@@ -67,19 +70,18 @@ router.post('/', requireAdmin, (req, res) => {
   }
 });
 
-// PUT /api/v1/services/:id
-router.put('/:id', requireAdmin, (req, res) => {
-  const id = Number(req.params.id);
-  if (!Number.isInteger(id)) return res.status(400).json({ error: 'ID non valido' });
+// PUT /api/v1/services/:slug
+router.put('/:slug', requireAdmin, (req, res) => {
+  const slug = req.params.slug;
   const body = req.body;
   if (!body || typeof body !== 'object') {
     return res.status(400).json({ error: 'Body richiesto: oggetto JSON' });
   }
-  const existing = db.prepare('SELECT id FROM services WHERE id = ?').get(id);
+  const existing = db.prepare('SELECT id FROM services WHERE slug = ?').get(slug);
   if (!existing) return res.status(404).json({ error: 'Servizio non trovato' });
 
-  const { slug, order, ...rest } = body;
-  if (!slug || typeof slug !== 'string') {
+  const { slug: newSlug, order, ...rest } = body;
+  if (!newSlug || typeof newSlug !== 'string') {
     return res.status(400).json({ error: 'Campo "slug" obbligatorio' });
   }
   const sortOrder = typeof order === 'number' ? order : 0;
@@ -89,26 +91,25 @@ router.put('/:id', requireAdmin, (req, res) => {
          SET slug = ?, sort_order = ?, data = ?, updated_at = datetime('now')
        WHERE id = ?`
     );
-    stmt.run(slug, sortOrder, JSON.stringify(rest), id);
+    stmt.run(newSlug, sortOrder, JSON.stringify(rest), existing.id);
     const row = db
       .prepare('SELECT id, slug, sort_order, data FROM services WHERE id = ?')
-      .get(id);
+      .get(existing.id);
     res.json(rowToService(row));
   } catch (err) {
     if (String(err.message).includes('UNIQUE')) {
-      return res.status(400).json({ error: `Slug "${slug}" già esistente` });
+      return res.status(400).json({ error: `Slug "${newSlug}" già esistente` });
     }
     throw err;
   }
 });
 
-// DELETE /api/v1/services/:id
-router.delete('/:id', requireAdmin, (req, res) => {
-  const id = Number(req.params.id);
-  if (!Number.isInteger(id)) return res.status(400).json({ error: 'ID non valido' });
-  const info = db.prepare('DELETE FROM services WHERE id = ?').run(id);
+// DELETE /api/v1/services/:slug
+router.delete('/:slug', requireAdmin, (req, res) => {
+  const slug = req.params.slug;
+  const info = db.prepare('DELETE FROM services WHERE slug = ?').run(slug);
   if (info.changes === 0) return res.status(404).json({ error: 'Servizio non trovato' });
-  res.json({ ok: true, id });
+  res.json({ ok: true, slug });
 });
 
 module.exports = router;

@@ -13,6 +13,7 @@ export interface CompanyData {
 }
 
 export interface ServiceItem {
+  dbId?: number;
   id: string;
   slug: string;
   order: number;
